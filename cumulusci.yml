@@ -1,0 +1,19 @@
+minimum_cumulusci_version: '3.9.1'
+project:
+    name: Testing-Framework-Project
+    package:
+        name:  Testing-Framework-Project
+        api_version: '48.0'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/Testing-Framework-Project/tests
+            options:
+                outputdir: robot/Testing-Framework-Project/results
+
+    robot_testdoc:
+        options:
+            path: robot/Testing-Framework-Project/tests
+            output: robot/Testing-Framework-Project/doc/Testing-Framework-Project_tests.html
